@@ -1,0 +1,36 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/eblockcoin_bg.qm</file>
+        <file alias="ca">locale/eblockcoin_ca.qm</file>
+        <file alias="cs">locale/eblockcoin_cs.qm</file>
+        <file alias="da">locale/eblockcoin_da.qm</file>
+        <file alias="de">locale/eblockcoin_de.qm</file>
+        <file alias="en">locale/eblockcoin_en.qm</file>
+        <file alias="en_US">locale/eblockcoin_en_US.qm</file>
+        <file alias="eo">locale/eblockcoin_eo.qm</file>
+        <file alias="es">locale/eblockcoin_es.qm</file>
+        <file alias="es_ES">locale/eblockcoin_es_ES.qm</file>
+        <file alias="fi">locale/eblockcoin_fi.qm</file>
+        <file alias="fr_FR">locale/eblockcoin_fr_FR.qm</file>
+        <file alias="hi_IN">locale/eblockcoin_hi_IN.qm</file>
+        <file alias="hr">locale/eblockcoin_hr.qm</file>
+        <file alias="hr_HR">locale/eblockcoin_hr_HR.qm</file>
+        <file alias="it">locale/eblockcoin_it.qm</file>
+        <file alias="ja">locale/eblockcoin_ja.qm</file>
+        <file alias="ko_KR">locale/eblockcoin_ko_KR.qm</file>
+        <file alias="lt_LT">locale/eblockcoin_lt_LT.qm</file>
+        <file alias="nl">locale/eblockcoin_nl.qm</file>
+        <file alias="pl">locale/eblockcoin_pl.qm</file>
+        <file alias="pt">locale/eblockcoin_pt.qm</file>
+        <file alias="pt_BR">locale/eblockcoin_pt_BR.qm</file>
+        <file alias="ro_RO">locale/eblockcoin_ro_RO.qm</file>
+        <file alias="ru">locale/eblockcoin_ru.qm</file>
+        <file alias="sk">locale/eblockcoin_sk.qm</file>
+        <file alias="sv">locale/eblockcoin_sv.qm</file>
+        <file alias="tr">locale/eblockcoin_tr.qm</file>
+        <file alias="uk">locale/eblockcoin_uk.qm</file>
+        <file alias="vi">locale/eblockcoin_vi.qm</file>
+        <file alias="zh_CN">locale/eblockcoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/eblockcoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

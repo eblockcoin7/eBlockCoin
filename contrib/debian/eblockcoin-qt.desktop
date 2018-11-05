@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=eBlockCoin
+Comment=eBlockCoin P2P Cryptocurrency
+Comment[fr]=eBlockCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=eBlockCoin, eşten eşe kriptografik sanal para birimi
+Exec=eblockcoin-qt %u
+Terminal=false
+Type=Application
+Icon=eblockcoin128
+MimeType=x-scheme-handler/eblockcoin;
+Categories=Office;Finance;

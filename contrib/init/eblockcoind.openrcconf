@@ -1,0 +1,26 @@
+# /etc/conf.d/eblockcoind: config file for /etc/init.d/eblockcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/eblockcoin/eblockcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/eblockcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/eblockcoind.pid"
+
+# Where to write eblockcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/eblockcoind"
+
+# User and group to own eblockcoind process
+#BITCOIND_USER="eblockcoin"
+#BITCOIND_GROUP="eblockcoin"
+
+# Path to eblockcoind executable
+#BITCOIND_BIN="/usr/bin/eblockcoind"
+
+# Nice value to run eblockcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
