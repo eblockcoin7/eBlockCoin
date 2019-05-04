@@ -1,7 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The eBlockCoin developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The eBlockCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -69,11 +70,19 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	(5945, uint256("0xa4d232739a1c507b896b424b34c1f419af3ce38227db2d3e3f59ab9763df48f7"))
 	(6184, uint256("0xeffa5fab97c9940843ebe3d28b01e0cc15746b31d99154e43649a222ebee0d93"))
 	(6273, uint256("0xc7a14c70246fbc96eaf960ca90ab3e76bd56493121f49a24ec7ba9d8c5b23d53"))
+	(49236, uint256("0x64ffea57b302c03bfaca3d8022b98e8f221d68d172aa1f7d29e8bcd270fd4e54"))
+	(124759, uint256("0x7844aa33c7617b68c3eb6d09a6e0ecbb98ccfb5e0f4e34749bba0e68bdb8ea44"))
+	(166418, uint256("0x51d3bd2fc72743e550f8cbaf9a1c171dca8f1578ea0684a0638bf9855f733fea"))
+	(189745, uint256("0x3e7709fd6d5366feadee1429ef367cc6aaa7619810dd40db659e761b7ea3b034"))
+	(210403, uint256("0x8f4698b306a018e6081d00618171da424b5e36a7883351543f7a242c88d52d54"))
+	(228624, uint256("0x985488daeae2ed14806bf28c07478c13360daf7c7ff58c98b4241ffc045982a9"))
+	(259911, uint256("0x1e5a9681ed0a0d01d5dbecd778550b6cbd5bd378b32b6e1d9759db31d6e17200"))
+	
 	;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-	1541404996, // * UNIX timestamp of last checkpoint block
-    12594,    // * total number of transactions between genesis and last checkpoint
+	1556861779, // * UNIX timestamp of last checkpoint block
+    530328,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2500        // * estimated number of transactions per day after checkpoint
 };
@@ -143,6 +152,9 @@ public:
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 50000000 * COIN;
 
+       /** Major code base update **/
+        nWalletForkBlock = 280001;
+
         /** Height or Time Based Activations **/
         nLastPOWBlock = 100;
         nModifierUpdateBlock = 999999999;
@@ -187,9 +199,9 @@ public:
         assert(hashGenesisBlock == uint256("0x0000081ec66762d58b3941dad8528f20cdd1a916dc02388b91b9ab9b79e2fe0f"));
         assert(genesis.hashMerkleRoot == uint256("0x34d168a6af13862c0ff8f3b56c73f9d3abd403bbd7e64a9c62a63b2afcc9cefe"));
 
-        vSeeds.push_back(CDNSSeedData("0", "8.9.15.133"));     // Primary DNS Seeder from Fuzzbawls
-        vSeeds.push_back(CDNSSeedData("1", "95.179.144.84"));    // Secondary DNS Seeder from Fuzzbawls
-        vSeeds.push_back(CDNSSeedData("2", "217.69.4.133"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("0", "8.9.15.133"));     
+        vSeeds.push_back(CDNSSeedData("1", "95.179.144.84"));    
+        vSeeds.push_back(CDNSSeedData("2", "217.69.4.133"));         
         vSeeds.push_back(CDNSSeedData("3", "80.240.31.85"));
         vSeeds.push_back(CDNSSeedData("4", "45.32.180.84"));
 		vSeeds.push_back(CDNSSeedData("5", "45.77.22.43"));

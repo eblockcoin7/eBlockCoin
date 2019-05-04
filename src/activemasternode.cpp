@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2015-2018 The eBlockCoin developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The eBlockCoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -456,7 +457,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
 
     // Filter
     BOOST_FOREACH (const COutput& out, vCoins) {
-        if (out.tx->vout[out.i].nValue == 2500 * COIN) { //exactly
+        if (IsMasternodeCollateral(out.tx->vout[out.i].nValue)) { //exactly
             filteredCoins.push_back(out);
         }
     }
